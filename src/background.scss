@@ -1,0 +1,19 @@
+@import './base.scss';
+
+.pure-bg-blue {
+  background: rgba(var(--pureBlueRgb), var(--pureBgOpacity));
+}
+
+.pure-bg-green {
+  background: rgba(var(--pureGreenRgb), var(--pureBgOpacity));
+}
+
+.pure-bg-white {
+  background: rgba(var(--pureWhiteRgb), var(--pureBgOpacity));
+}
+
+@each $opacity in $pure-opacities {
+  .pure-bg-opacity-#{$opacity} {
+    --pureBgOpacity: 0.#{$opacity};
+  }
+}

@@ -1,0 +1,11 @@
+@import './base.scss';
+
+.pure-border-black {
+  border: 1px solid rgba(var(--pureBlackRgb), var(--pureBdOpacity));
+}
+
+@each $opacity in $pure-opacities {
+  .pure-bd-opacity-#{$opacity} {
+    --pureBdOpacity: 0.#{$opacity};
+  }
+}

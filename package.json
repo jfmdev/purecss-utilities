@@ -1,0 +1,32 @@
+{
+  "name": "purecss-utilities",
+  "version": "1.0.0",
+  "description": "Utility CSS classes that complement PureCSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx sass src:dist --style=compressed",
+    "dev": "npx sass --watch src:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfmdev/purecss-utilities.git"
+  },
+  "keywords": [
+    "purecss",
+    "pure",
+    "utility",
+    "utlities",
+    "sass",
+    "css",
+    "html"
+  ],
+  "author": "JFMDev",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jfmdev/purecss-utilities/issues"
+  },
+  "homepage": "https://github.com/jfmdev/purecss-utilities#readme",
+  "dependencies": {
+    "sass": "^1.76.0"
+  }
+}
