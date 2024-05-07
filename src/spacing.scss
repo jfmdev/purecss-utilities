@@ -1,5 +1,12 @@
 @import './base.scss';
 
+// .pure-m-1  | .pure-m-2  | .pure-m-3  | .pure-m-4  | .pure-m-5  | .pure-m-6  | .pure-m-7  | .pure-m-8
+// .pure-mb-1 | .pure-mb-2 | .pure-mb-3 | .pure-mb-4 | .pure-mb-5 | .pure-mb-6 | .pure-mb-7 | .pure-mb-8
+// .pure-ml-1 | .pure-ml-2 | .pure-ml-3 | .pure-ml-4 | .pure-ml-5 | .pure-ml-6 | .pure-ml-7 | .pure-ml-8
+// .pure-mr-1 | .pure-mr-2 | .pure-mr-3 | .pure-mr-4 | .pure-mr-5 | .pure-mr-6 | .pure-mr-7 | .pure-mr-8
+// .pure-mt-1 | .pure-mt-2 | .pure-mt-3 | .pure-mt-4 | .pure-mt-5 | .pure-mt-6 | .pure-mt-7 | .pure-mt-8
+// .pure-mx-1 | .pure-mx-2 | .pure-mx-3 | .pure-mx-4 | .pure-mx-5 | .pure-mx-6 | .pure-mx-7 | .pure-mx-8
+// .pure-my-1 | .pure-my-2 | .pure-my-3 | .pure-my-4 | .pure-my-5 | .pure-my-6 | .pure-my-7 | .pure-my-8
 @for $i from 1 through 8 {
   .pure-m-#{$i} {
     margin: calc(#{$i} * var(--pureSpacingUnit));
@@ -30,7 +37,16 @@
     margin-bottom: calc(#{$i} * var(--pureSpacingUnit));
     margin-top: calc(#{$i} * var(--pureSpacingUnit));
   }
+}
 
+// .pure-p-1  | .pure-p-2  | .pure-p-3  | .pure-p-4  | .pure-p-5  | .pure-p-6  | .pure-p-7  | .pure-p-8
+// .pure-pb-1 | .pure-pb-2 | .pure-pb-3 | .pure-pb-4 | .pure-pb-5 | .pure-pb-6 | .pure-pb-7 | .pure-pb-8
+// .pure-pl-1 | .pure-pl-2 | .pure-pl-3 | .pure-pl-4 | .pure-pl-5 | .pure-pl-6 | .pure-pl-7 | .pure-pl-8
+// .pure-pr-1 | .pure-pr-2 | .pure-pr-3 | .pure-pr-4 | .pure-pr-5 | .pure-pr-6 | .pure-pr-7 | .pure-pr-8
+// .pure-pt-1 | .pure-pt-2 | .pure-pt-3 | .pure-pt-4 | .pure-pt-5 | .pure-pt-6 | .pure-pt-7 | .pure-pt-8
+// .pure-px-1 | .pure-px-2 | .pure-px-3 | .pure-px-4 | .pure-px-5 | .pure-px-6 | .pure-px-7 | .pure-px-8
+// .pure-py-1 | .pure-py-2 | .pure-py-3 | .pure-py-4 | .pure-py-5 | .pure-py-6 | .pure-py-7 | .pure-py-8
+@for $i from 1 through 8 {
   .pure-p-#{$i} {
     padding: calc(#{$i} * var(--pureSpacingUnit));
   }
@@ -59,11 +75,5 @@
   .pure-py-#{$i} {
     padding-bottom: calc(#{$i} * var(--pureSpacingUnit));
     padding-top: calc(#{$i} * var(--pureSpacingUnit));
-  }
-}
-
-@for $i from 1 through 5 {
-  .pure-spacing-#{$i}x {
-    --pureSpacingUnit: #{$pure-spacing-unit * $i}rem;
   }
 }

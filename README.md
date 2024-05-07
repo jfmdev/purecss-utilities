@@ -4,17 +4,34 @@ A CSS library that provides utility CSS classes which complement [PureCSS](https
 
 ## Installation
 
-TODO
+TODO (first publish on NPM and jsdelivr)
+
 
 ## Utilities
 
 ### Text colors
 
-TODO
+You can change the colors of texts using classes `.pure-txt-black` / `.pure-txt-blue` / `.pure-txt-cyan` / `.pure-txt-green` / `.pure-txt-magenta` / `.pure-txt-red` / `.pure-txt-white` / `.pure-txt-yellow`.
 
-### Backgrounds
+Additionally, you can modify the opacity of the colors the `pure-txt-alpha-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
 
-TODO
+### Background colors
+
+You can change the colors of backgrounds using classes `.pure-bg-black` / `.pure-bg-blue` / `.pure-bg-cyan` / `.pure-bg-green` / `.pure-bg-magenta` / `.pure-bg-red` / `.pure-bg-white` / `.pure-bg-yellow`.
+
+Additionally, you can modify the opacity of the colors the `pure-bg-alpha-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
+
+### Borders
+
+You can define borders using the class `.pure-bd-*`, where `*` can be any number between 1 and 5, defining the width (in pixels) of the border. By default the border will be solid and black.
+
+To change the style of a border you can use classes `.pure-bd-solid` / `.pure-bd-dotted` / `.pure-bd-dashed`.
+
+To change the color of a border you can use classes  `.pure-bd-black` / `.pure-bd-blue` / `.pure-bd-cyan` / `.pure-bd-green` / `.pure-bd-magenta` / `.pure-bd-red` / `.pure-bd-white` / `.pure-bd-yellow`.
+
+Additionally, you can modify the opacity of the border colors using the `pure-bg-alpha-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
+
+To set the radius of the border you can use classes `.pure-bd-radius-*` (where `*` can be any number between 1 and 5) / `.pure-bd-radius-circle` / `.pure-bd-radius-pill`.
 
 ### Buttons
 
@@ -24,21 +41,33 @@ TODO
 
 TODO
 
+### Opacity
+
+The opacity of elements can be modified using the `.pure-opacity-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
+
 ### Spacing
 
 The library provides `pure-m-*` and `pure-p-*` classes for controlling an element's margin or padding, where `*` can be replaced with any number between `1` and `8`.  
 
 To set the margin or padding to a single side, you can use classes `pure-mb-*` / `pure-ml-*` / `pure-mr-*` / `pure-mt-*` and `pure-pb-*` / `pure-pl-*` / `pure-pr-*` / `pure-pt-*`; and to set the margin or padding to the horizontal or vertical sides, you can use classes `pure-mx-*` / `pure-my-*` and `pure-px-*` / `pure-py-*`.
 
-The base spacing used is `0.25rem`, but you can change this value either by overriding the value of the `--pureSpacingUnit` variable or by using the `pure-space-2x` / `pure-space-3x` / `pure-space-4x` / `pure-space-5x` classes. 
-
 ### Sizing
 
 TODO
 
+
 ## Customization
 
-TODO (Variables)
+### Colors
+
+The library uses variables `--pureBlack` / `--pureBlue` / `--pureCyan` / `--pureGreen` / `--pureMagenta` / `--pureRed` / `--pureWhite` / `--pureYellow` to define colors that later are used to define utility classes for texts, background, borders and buttons.
+
+You can override these variables to change the colors used, but on that case you must also override the corresponding RBG variables: `--pureBlackRgb` / `--pureBlueRgb` / `--pureCyanRgb` / `--pureGreenRgb` / `--pureMagentaRgb` / `--pureRedRgb` / `--pureWhiteRgb` / `--pureYellowRgb`.
+
+### Spacing
+
+The base spacing used is `0.25rem`, but you can change this value by overriding the value of the `--pureSpacingUnit` variable.
+
 
 ## Development
 
@@ -46,6 +75,7 @@ The library was implemented using [Sass](https://sass-lang.com/), you can use th
 
 * `npm run build`
 * `npm run dev`
+
 
 ## License
 

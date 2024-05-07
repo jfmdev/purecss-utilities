@@ -1,11 +1,53 @@
 @import './base.scss';
 
-.pure-border-black {
-  border: 1px solid rgba(var(--pureBlackRgb), var(--pureBdOpacity));
+// .pure-bd-1 | .pure-bd-2 | .pure-bd-3 | .pure-bd-4 | .pure-bd-5
+@for $i from 1 through 5 {
+  .pure-bd-#{$i} {
+    border-width: #{$i}px;
+    border-style: solid;
+  }
 }
 
+// .pure-bd-black | .pure-bd-blue | .pure-bd-cyan | .pure-bd-green
+// .pure-bd-magenta | .pure-bd-red | .pure-bd-white | .pure-bd-yellow 
+@each $colorName, $rbgVar in $rgb-color-variables {
+  .pure-bd-#{$colorName} {
+    border-color: rgba(var(#{$rbgVar}), var(--pureBdOpacity));
+  }
+}
+
+// .pure-bd-alpha-10 | .pure-bd-alpha-20 | .pure-bd-alpha-25 | .pure-bd-alpha-30 
+// .pure-bd-alpha-40 | .pure-bd-alpha-50 | .pure-bd-alpha-60 | .pure-bd-alpha-70 
+// .pure-bd-alpha-75 | .pure-bd-alpha-80 | .pure-bd-alpha-90
 @each $opacity in $pure-opacities {
-  .pure-bd-opacity-#{$opacity} {
+  .pure-bd-alpha-#{$opacity} {
     --pureBdOpacity: 0.#{$opacity};
   }
+}
+
+.pure-bd-dashed {
+  border-style: dashed;
+}
+
+.pure-bd-dotted {
+  border-style: dotted;
+}
+
+.pure-bd-solid {
+  border-style: solid;
+}
+
+// .pure-bd-radius-1 | .pure-bd-radius-2 | .pure-bd-radius-3 | .pure-bd-radius-4 | .pure-bd-radius-5
+@for $i from 1 through 5 {
+  .pure-bd-radius-#{$i} {
+    border-radius: #{$i * 0.25}rem;
+  }
+}
+
+.pure-bd-radius-circle {
+  border-radius: 50%;
+}
+
+.pure-bd-radius-pill {
+  border-radius: 50rem;
 }

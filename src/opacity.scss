@@ -1,0 +1,10 @@
+@import './base.scss';
+
+// .pure-opacity-10 | .pure-opacity-20 | .pure-opacity-25 | .pure-opacity-30 
+// .pure-opacity-40 | .pure-opacity-50 | .pure-opacity-60 | .pure-opacity-70 
+// .pure-opacity-75 | .pure-opacity-80 | .pure-opacity-90
+@each $opacity in $pure-opacities {
+  .pure-opacity-#{$opacity} {
+    opacity: $opacity * 0.01;
+  }
+}
