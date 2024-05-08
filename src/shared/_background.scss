@@ -1,0 +1,16 @@
+// .pure-bg-black | .pure-bg-blue | .pure-bg-cyan | .pure-bg-green
+// .pure-bg-magenta | .pure-bg-red | .pure-bg-white | .pure-bg-yellow 
+@each $colorName, $rbgVar in $rgb-color-variables {
+  .pure-bg-#{$colorName} {
+    background: rgba(var(#{$rbgVar}), var(--pureBgOpacity));
+  }
+}
+
+// .pure-bg-alpha-10 | .pure-bg-alpha-20 | .pure-bg-alpha-25 | .pure-bg-alpha-30 
+// .pure-bg-alpha-40 | .pure-bg-alpha-50 | .pure-bg-alpha-60 | .pure-bg-alpha-70 
+// .pure-bg-alpha-75 | .pure-bg-alpha-80 | .pure-bg-alpha-90
+@each $opacity in $pure-opacities {
+  .pure-bg-alpha-#{$opacity} {
+    --pureBgOpacity: 0.#{$opacity};
+  }
+}

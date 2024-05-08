@@ -2,6 +2,11 @@
 
 A CSS library that provides utility CSS classes which complement [PureCSS](https://purecss.io/).
 
+[See Demo](https://jfmdev.github.io/purecss-utilities/demo.html)
+
+> Note: the library doesn't provide utilities for Flexbox containers, for that you can use the [Flexbox utility classes](https://gist.github.com/jfmdev/e3541b3d9e94866fe429b9baf89e6303) Gist.
+
+
 ## Installation
 
 TODO (first publish on NPM and jsdelivr)
@@ -9,11 +14,17 @@ TODO (first publish on NPM and jsdelivr)
 
 ## Utilities
 
-### Text colors
+### Texts
+
+You can set the text font size using classes `.pure-txt-xxs` / `.pure-txt-xs` / `.pure-txt-sm` / `.pure-txt-md` / `.pure-txt-lg` / `.pure-txt-xl` / `.pure-txt-xxl`.
+
+You can define the text alignment using classes `.pure-txt-center` / `.pure-txt-justify` / `.pure-txt-left` / `.pure-txt-right`.
 
 You can change the colors of texts using classes `.pure-txt-black` / `.pure-txt-blue` / `.pure-txt-cyan` / `.pure-txt-green` / `.pure-txt-magenta` / `.pure-txt-red` / `.pure-txt-white` / `.pure-txt-yellow`.
 
 Additionally, you can modify the opacity of the colors the `pure-txt-alpha-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
+
+TODO: Add support for links
 
 ### Background colors
 
@@ -37,10 +48,6 @@ To set the radius of the border you can use classes `.pure-bd-radius-*` (where `
 
 TODO
 
-### Flex
-
-TODO
-
 ### Opacity
 
 The opacity of elements can be modified using the `.pure-opacity-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
@@ -50,10 +57,6 @@ The opacity of elements can be modified using the `.pure-opacity-*` class, where
 The library provides `pure-m-*` and `pure-p-*` classes for controlling an element's margin or padding, where `*` can be replaced with any number between `1` and `8`.  
 
 To set the margin or padding to a single side, you can use classes `pure-mb-*` / `pure-ml-*` / `pure-mr-*` / `pure-mt-*` and `pure-pb-*` / `pure-pl-*` / `pure-pr-*` / `pure-pt-*`; and to set the margin or padding to the horizontal or vertical sides, you can use classes `pure-mx-*` / `pure-my-*` and `pure-px-*` / `pure-py-*`.
-
-### Sizing
-
-TODO
 
 
 ## Customization

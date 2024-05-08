@@ -1,0 +1,64 @@
+// .pure-txt-black | .pure-txt-blue | .pure-txt-cyan | .pure-txt-green
+// .pure-txt-magenta | .pure-txt-red | .pure-txt-white | .pure-txt-yellow 
+@each $colorName, $rbgVar in $rgb-color-variables {
+  .pure-txt-#{$colorName} {
+    color: rgba(var(#{$rbgVar}), var(--pureTxtOpacity));
+  }
+}
+
+// .pure-txt-alpha-10 | .pure-txt-alpha-20 | .pure-txt-alpha-25 | .pure-txt-alpha-30 
+// .pure-txt-alpha-40 | .pure-txt-alpha-50 | .pure-txt-alpha-60 | .pure-txt-alpha-70 
+// .pure-txt-alpha-75 | .pure-txt-alpha-80 | .pure-txt-alpha-90
+@each $opacity in $pure-opacities {
+  .pure-txt-alpha-#{$opacity} {
+    --pureTxtOpacity: 0.#{$opacity};
+  }
+}
+
+// --- Alignment --- //
+
+.pure-txt-center {
+  text-align: center;
+}
+
+.pure-txt-justify {
+  text-align: justify;
+}
+
+.pure-txt-left {
+  text-align: left;
+}
+
+.pure-txt-right {
+  text-align: right;
+}
+
+// --- Font size --- //
+
+.pure-txt-xxs {
+  font-size: 0.7rem;
+}
+
+.pure-txt-xs {
+  font-size: 0.8rem;
+}
+
+.pure-txt-sm {
+  font-size: 0.9rem;
+}
+
+.pure-txt-md {
+  font-size: 1rem;
+}
+
+.pure-txt-lg {
+  font-size: 1.1rem;
+}
+
+.pure-txt-xl {
+  font-size: 1.2rem;
+}
+
+.pure-txt-xxl {
+  font-size: 1.3rem;
+}
