@@ -4,6 +4,18 @@
   .pure-txt-#{$colorName} {
     color: rgba(var(#{$rbgVar}), var(--pureTxtOpacity));
   }
+
+  a.pure-txt-#{$colorName},
+  button.pure-txt-#{$colorName} {
+    &:hover {
+      color: rgba(var(#{$rbgVar}), var(--pureTxtHoverOpacity));
+    }
+
+    &:active,
+    &:hover:active {
+      color: rgba(var(#{$rbgVar}), var(--pureTxtActiveOpacity));
+    }
+  }
 }
 
 // .pure-txt-alpha-10 | .pure-txt-alpha-20 | .pure-txt-alpha-25 | .pure-txt-alpha-30 
@@ -13,24 +25,6 @@
   .pure-txt-alpha-#{$opacity} {
     --pureTxtOpacity: 0.#{$opacity};
   }
-}
-
-// --- Alignment --- //
-
-.pure-txt-center {
-  text-align: center;
-}
-
-.pure-txt-justify {
-  text-align: justify;
-}
-
-.pure-txt-left {
-  text-align: left;
-}
-
-.pure-txt-right {
-  text-align: right;
 }
 
 // --- Font size --- //

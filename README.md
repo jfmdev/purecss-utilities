@@ -9,8 +9,11 @@ A CSS library that provides utility CSS classes which complement [PureCSS](https
 
 ## Installation
 
-TODO (first publish on NPM and jsdelivr)
+TODO (first publish on NPM)
 
+> https://cdn.jsdelivr.net/gh/jfmdev/purecss-utilities@main/dist/all.css
+> 
+> https://www.jsdelivr.com/documentation
 
 ## Utilities
 
@@ -18,13 +21,11 @@ TODO (first publish on NPM and jsdelivr)
 
 You can set the text font size using classes `.pure-txt-xxs` / `.pure-txt-xs` / `.pure-txt-sm` / `.pure-txt-md` / `.pure-txt-lg` / `.pure-txt-xl` / `.pure-txt-xxl`.
 
-You can define the text alignment using classes `.pure-txt-center` / `.pure-txt-justify` / `.pure-txt-left` / `.pure-txt-right`.
-
 You can change the colors of texts using classes `.pure-txt-black` / `.pure-txt-blue` / `.pure-txt-cyan` / `.pure-txt-green` / `.pure-txt-magenta` / `.pure-txt-red` / `.pure-txt-white` / `.pure-txt-yellow`.
 
 Additionally, you can modify the opacity of the colors the `pure-txt-alpha-*` class, where `*` can be replaced with numbers 10, 20, 25, 30, 40, 50, 60, 70, 75, 80 or 90.
 
-TODO: Add support for links
+For additional utilities, you can use the [Utility classes for text styling](https://gist.github.com/jfmdev/855d8b20823c89fc8f196812b2d3eb39) Gist.
 
 ### Background colors
 

@@ -40,6 +40,18 @@ $pure-spacing-unit: 0.25;
   initial-value: 1;
 }
 
+@property --pureTxtActiveOpacity {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.95;
+}
+
+@property --pureTxtHoverOpacity {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.8;
+}
+
 $rgb-color-variables: (
   "black": '--pureBlackRgb',
   "blue": '--pureBlueRgb',
