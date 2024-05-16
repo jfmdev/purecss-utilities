@@ -4,16 +4,29 @@ A CSS library that provides utility CSS classes which complement [PureCSS](https
 
 [See Demo](https://jfmdev.github.io/purecss-utilities/demo.html)
 
-> Note: the library doesn't provide utilities for Flexbox containers, for that you can use the [Flexbox utility classes](https://gist.github.com/jfmdev/e3541b3d9e94866fe429b9baf89e6303) Gist.
-
-
 ## Installation
 
-TODO (first publish on NPM)
+You can add this library to your page using the CDN from jsDelivr, just add a `<link>` element into your page's `<head>`, before your project's stylesheets but after PureCSS stylesheets. E.g.:
 
-> https://cdn.jsdelivr.net/gh/jfmdev/purecss-utilities@main/dist/all.css
-> 
-> https://www.jsdelivr.com/documentation
+```html
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/purecss-utilities@main/dist/all.css">
+</head>
+```
+
+You can also install the package using NPM:
+
+```
+npm install purecss purecss-utilities --save
+```
+
+And then reference the `css` files (from the `dist/` folder) or the `scss` files (from the `src/` folder), like:
+
+```js
+import 'purecss/build/pure-min.css'
+import 'purecss-utilities/dist/all.css'
+```
 
 ## Utilities
 
@@ -61,6 +74,9 @@ The library provides `pure-m-*` and `pure-p-*` classes for controlling an elemen
 
 To set the margin or padding to a single side, you can use classes `pure-mb-*` / `pure-ml-*` / `pure-mr-*` / `pure-mt-*` and `pure-pb-*` / `pure-pl-*` / `pure-pr-*` / `pure-pt-*`; and to set the margin or padding to the horizontal or vertical sides, you can use classes `pure-mx-*` / `pure-my-*` and `pure-px-*` / `pure-py-*`.
 
+### Flex
+
+The library doesn't provide utilities for Flexbox containers, for that you can use the [Flexbox utility classes](https://gist.github.com/jfmdev/e3541b3d9e94866fe429b9baf89e6303) Gist.
 
 ## Customization
 
@@ -72,11 +88,9 @@ You can override these variables to change the colors used, but on that case you
 
 Additionally, for the case of buttons, you may also need to override the variables `---pureBlackContrastRgb` / `---pureBlueContrastRgb` / `---pureCyanContrastRgb` / `---pureGreenContrastRgb` / `---pureGreyContrastRgb` / `---pureMagentaContrastRgb` / `---pureRedContrastRgb` / `---pureWhiteContrastRgb` / `---pureYellowContrastRgb` that define the color of the labels inside the buttons.
 
-
 ### Spacing
 
 The base spacing used is `0.25rem`, but you can change this value by overriding the value of the `--pureSpacingUnit` variable.
-
 
 ## Development
 
@@ -84,7 +98,6 @@ The library was implemented using [Sass](https://sass-lang.com/), you can use th
 
 * `npm run build`
 * `npm run dev`
-
 
 ## License
 
