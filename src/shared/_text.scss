@@ -1,4 +1,4 @@
-// .pure-txt-black | .pure-txt-blue | .pure-txt-cyan | .pure-txt-green
+// .pure-txt-black | .pure-txt-blue | .pure-txt-cyan | .pure-txt-green | .pure-txt-grey
 // .pure-txt-magenta | .pure-txt-red | .pure-txt-white | .pure-txt-yellow 
 @each $colorName, $rbgVar in $rgb-color-variables {
   .pure-txt-#{$colorName} {
@@ -6,7 +6,7 @@
   }
 
   a.pure-txt-#{$colorName},
-  button.pure-txt-#{$colorName} {
+  button:not(.pure-button).pure-txt-#{$colorName} {
     &:hover {
       color: rgba(var(#{$rbgVar}), var(--pureTxtHoverOpacity));
     }

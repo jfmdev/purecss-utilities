@@ -1,0 +1,41 @@
+@use "sass:map";
+
+// .pure-button-black | .pure-button-blue | .pure-button-cyan | .pure-button-green | .pure-button-grey
+// .pure-button-magenta | .pure-button-red | .pure-button-white | .pure-button-yellow 
+@each $colorName, $backRbgVar in $rgb-color-variables {
+  $foreRbgVar: map.get($buttons-text-colors, $colorName);
+
+  .pure-button-#{$colorName} {
+    color: rgba(var(#{$foreRbgVar}), 1);
+    background: rgba(var(#{$backRbgVar}), 1);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  a.pure-button-#{$colorName},
+  button.pure-button-#{$colorName} {
+    &:not(.pure-button-disabled):focus,
+    &:not(.pure-button-disabled):hover,
+    &:not(.pure-button-disabled).pure-button-hover {
+      background-image: linear-gradient(
+        transparent,
+        rgba(var(#{$foreRbgVar}), 0.1) 40%,
+        rgba(var(#{$foreRbgVar}), 0.2)
+      );
+    }
+
+    &:not(.pure-button-disabled):active,
+    &:not(.pure-button-disabled).pure-button-active {
+      box-shadow:
+        0 0 0 1px rgba(var(#{$foreRbgVar}), 0.3) inset,
+        0 0 6px rgba(var(#{$foreRbgVar}), 0.4) inset;
+      border-color: rgba(var(#{$foreRbgVar}), 0.5);
+    }    
+  }
+}
+
+.pure-button-disabled,
+.pure-button.pure-button-disabled {
+  opacity: 0.8;
+  cursor: no-drop;
+}

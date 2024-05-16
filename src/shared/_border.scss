@@ -6,7 +6,7 @@
   }
 }
 
-// .pure-bd-black | .pure-bd-blue | .pure-bd-cyan | .pure-bd-green
+// .pure-bd-black | .pure-bd-blue | .pure-bd-cyan | .pure-bd-green | .pure-bd-grey
 // .pure-bd-magenta | .pure-bd-red | .pure-bd-white | .pure-bd-yellow 
 @each $colorName, $rbgVar in $rgb-color-variables {
   .pure-bd-#{$colorName} {

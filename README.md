@@ -47,7 +47,9 @@ To set the radius of the border you can use classes `.pure-bd-radius-*` (where `
 
 ### Buttons
 
-TODO
+You can style buttons using classes `.pure-button-black` / `.pure-button-blue` / `.pure-button-cyan` / `.pure-button-green` / `.pure-button-magenta` / `.pure-button-red` / `.pure-button-white` / `.pure-button-yellow`.
+
+Also you can use the `.pure-button-disabled` class to make the button to _look_ disabled.
 
 ### Opacity
 
@@ -67,6 +69,9 @@ To set the margin or padding to a single side, you can use classes `pure-mb-*` /
 The library uses variables `--pureBlack` / `--pureBlue` / `--pureCyan` / `--pureGreen` / `--pureMagenta` / `--pureRed` / `--pureWhite` / `--pureYellow` to define colors that later are used to define utility classes for texts, background, borders and buttons.
 
 You can override these variables to change the colors used, but on that case you must also override the corresponding RBG variables: `--pureBlackRgb` / `--pureBlueRgb` / `--pureCyanRgb` / `--pureGreenRgb` / `--pureMagentaRgb` / `--pureRedRgb` / `--pureWhiteRgb` / `--pureYellowRgb`.
+
+Additionally, for the case of buttons, you may also need to override the variables `---pureBlackContrastRgb` / `---pureBlueContrastRgb` / `---pureCyanContrastRgb` / `---pureGreenContrastRgb` / `---pureGreyContrastRgb` / `---pureMagentaContrastRgb` / `---pureRedContrastRgb` / `---pureWhiteContrastRgb` / `---pureYellowContrastRgb` that define the color of the labels inside the buttons.
+
 
 ### Spacing
 
