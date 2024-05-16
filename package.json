@@ -1,6 +1,6 @@
 {
   "name": "purecss-utilities",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility CSS classes that complement PureCSS",
   "main": "index.js",
   "scripts": {
