@@ -24,15 +24,15 @@ $pure-spacing-unit: 0.25;
   --pureSpacingUnit: #{$pure-spacing-unit}rem;
 
   // Auxiliary variables (won't be needed once "color-contrast()" is supported by all major browsers).
-  ---pureBlackContrastRgb: 255, 255, 255;
-  ---pureBlueContrastRgb: 0, 0, 0;
-  ---pureCyanContrastRgb: 0, 0, 0;
-  ---pureGreenContrastRgb: 0, 0, 0;
-  ---pureGreyContrastRgb: 0, 0, 0;
-  ---pureMagentaContrastRgb: 0, 0, 0;
-  ---pureRedContrastRgb: 255, 255, 255;
-  ---pureWhiteContrastRgb: 0, 0, 0;
-  ---pureYellowContrastRgb: 0, 0, 0;
+  --pureBlackContrastRgb: 255, 255, 255;
+  --pureBlueContrastRgb: 0, 0, 0;
+  --pureCyanContrastRgb: 0, 0, 0;
+  --pureGreenContrastRgb: 0, 0, 0;
+  --pureGreyContrastRgb: 0, 0, 0;
+  --pureMagentaContrastRgb: 0, 0, 0;
+  --pureRedContrastRgb: 255, 255, 255;
+  --pureWhiteContrastRgb: 0, 0, 0;
+  --pureYellowContrastRgb: 0, 0, 0;
 }
 
 @property --pureBdOpacity {
@@ -78,13 +78,13 @@ $rgb-color-variables: (
 );
 
 $buttons-text-colors: (
-  "black": '---pureBlackContrastRgb',
-  "blue": '---pureBlueContrastRgb',
-  "cyan": '---pureCyanContrastRgb',
-  "green": '---pureGreenContrastRgb',
-  "grey": '---pureGreyContrastRgb',
-  "magenta": '---pureMagentaContrastRgb',
-  "red": '---pureRedContrastRgb',
-  "white": '---pureWhiteContrastRgb',
-  "yellow": '---pureYellowContrastRgb'
+  "black": '--pureBlackContrastRgb',
+  "blue": '--pureBlueContrastRgb',
+  "cyan": '--pureCyanContrastRgb',
+  "green": '--pureGreenContrastRgb',
+  "grey": '--pureGreyContrastRgb',
+  "magenta": '--pureMagentaContrastRgb',
+  "red": '--pureRedContrastRgb',
+  "white": '--pureWhiteContrastRgb',
+  "yellow": '--pureYellowContrastRgb'
 );
