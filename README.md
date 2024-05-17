@@ -48,7 +48,7 @@ Additionally, you can modify the opacity of the colors the `pure-bg-alpha-*` cla
 
 ### Borders
 
-You can define borders using the class `.pure-bd-*`, where `*` can be any number between 1 and 5, defining the width (in pixels) of the border. By default the border will be solid and black.
+You can define borders using the classes `.pure-bd-*` / `.pure-bd-bottom-*` / `.pure-bd-left-*` / `.pure-bd-right-*` / `.pure-bd-top-*`, where `*` can be any number between 1 and 5, defining the width (in pixels) of the border. By default the border will be solid and black.
 
 To change the style of a border you can use classes `.pure-bd-solid` / `.pure-bd-dotted` / `.pure-bd-dashed`.
 
