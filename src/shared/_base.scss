@@ -1,4 +1,4 @@
-$pure-opacities: 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90;
+$pure-opacities: 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100;
 $pure-spacing-unit: 0.25;
 
 :root {
@@ -63,6 +63,15 @@ $pure-spacing-unit: 0.25;
   syntax: "<number>";
   inherits: false;
   initial-value: 0.8;
+}
+
+/* HACK: We re-declare these variables for Firefox, which don't yet supports the "@property" feature */
+body {
+  --pureBdOpacity: 1;
+  --pureBgOpacity: 1;
+  --pureTxtOpacity: 1;
+  --pureTxtActiveOpacity: 0.95;
+  --pureTxtHoverOpacity: 0.8;
 }
 
 $rgb-color-variables: (

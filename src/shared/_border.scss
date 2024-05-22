@@ -40,7 +40,7 @@
 
 // .pure-bd-alpha-10 | .pure-bd-alpha-20 | .pure-bd-alpha-25 | .pure-bd-alpha-30 
 // .pure-bd-alpha-40 | .pure-bd-alpha-50 | .pure-bd-alpha-60 | .pure-bd-alpha-70 
-// .pure-bd-alpha-75 | .pure-bd-alpha-80 | .pure-bd-alpha-90
+// .pure-bd-alpha-75 | .pure-bd-alpha-80 | .pure-bd-alpha-90 | .pure-bd-alpha-100
 @each $opacity in $pure-opacities {
   .pure-bd-alpha-#{$opacity} {
     --pureBdOpacity: 0.#{$opacity};

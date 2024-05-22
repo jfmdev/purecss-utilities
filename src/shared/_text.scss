@@ -20,7 +20,7 @@
 
 // .pure-txt-alpha-10 | .pure-txt-alpha-20 | .pure-txt-alpha-25 | .pure-txt-alpha-30 
 // .pure-txt-alpha-40 | .pure-txt-alpha-50 | .pure-txt-alpha-60 | .pure-txt-alpha-70 
-// .pure-txt-alpha-75 | .pure-txt-alpha-80 | .pure-txt-alpha-90
+// .pure-txt-alpha-75 | .pure-txt-alpha-80 | .pure-txt-alpha-90 | .pure-txt-alpha-100
 @each $opacity in $pure-opacities {
   .pure-txt-alpha-#{$opacity} {
     --pureTxtOpacity: 0.#{$opacity};
